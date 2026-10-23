@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AAT5 · WordNet Senses · AML23702</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<aside class="side">
+  <div class="brand"><span class="mark">NL</span><div><b>ANLP Workbench</b><small>AML23702 · AAT 5</small></div></div>
+  <nav id="nav">
+    <button class="active"><i>05</i> Word Senses <em>WordNet · port 5005</em></button>
+  </nav>
+  <div class="who">P Prithvi Raj Kandan<br><span>1GA23AI033 · Dept. of AI &amp; ML</span><br><span>Global Academy of Technology</span></div>
+</aside>
+
+<main>
+<section id="q5">
+  <header><h1>WordNet Synonyms, Definitions &amp; Context</h1><p>Lists every WordNet sense of a word with its definition and synonyms, then uses the Lesk algorithm to pick the sense used in each sentence. This page calls <code>http://localhost:5005/api/wordnet</code>.</p></header>
+  <div class="grid2">
+    <div class="card">
+      <label>Word</label>
+      <input id="q5-w" value="">
+      <label>Context sentences (one per line)</label>
+      <textarea id="q5-ctx" rows="4" placeholder="Loading data/contexts.txt…"></textarea>
+      <button class="go" onclick="runQ5()">Explore word</button>
+    </div>
+    <div class="card note"><b>How to read the output</b><p>Each <i>synset</i> is one meaning. <code>n</code> = noun, <code>v</code> = verb, <code>a/s</code> = adjective, <code>r</code> = adverb. Lesk chooses the sense whose dictionary gloss overlaps most with the sentence, so it can be wrong on short sentences.</p></div>
+  </div>
+  <div id="q5-out" class="out"></div>
+</section>
+</main>
+<script src="app.js"></script>
+</body>
+</html>

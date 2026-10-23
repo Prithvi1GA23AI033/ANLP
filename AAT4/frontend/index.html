@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AAT4 · LDA Topic Modelling · AML23702</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<aside class="side">
+  <div class="brand"><span class="mark">NL</span><div><b>ANLP Workbench</b><small>AML23702 · AAT 4</small></div></div>
+  <nav id="nav">
+    <button class="active"><i>04</i> Topic Modelling <em>LDA · port 5004</em></button>
+  </nav>
+  <div class="who">P Prithvi Raj Kandan<br><span>1GA23AI033 · Dept. of AI &amp; ML</span><br><span>Global Academy of Technology</span></div>
+</aside>
+
+<main>
+<section id="q4">
+  <header><h1>Topic Modelling with LDA</h1><p>CountVectorizer builds a document-term matrix; Latent Dirichlet Allocation discovers topics and their top five words. This page calls <code>http://localhost:5004/api/lda</code>.</p></header>
+  <div class="card">
+    <label>Documents (one per line)</label>
+    <textarea id="q4-docs" rows="9" placeholder="Loading data/documents.txt…"></textarea>
+    <div class="row"><label>Number of topics</label><input id="q4-k" type="number" value="3" min="2" max="8" style="width:80px"><label>Random seed</label><input id="q4-seed" type="number" value="5" style="width:90px"></div>
+    <button class="go" onclick="runQ4()">Discover topics</button>
+  </div>
+  <div id="q4-out" class="out"></div>
+</section>
+</main>
+<script src="app.js"></script>
+</body>
+</html>

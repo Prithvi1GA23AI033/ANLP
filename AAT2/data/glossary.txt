@@ -1,0 +1,6 @@
+Natural Language Processing enables computers to understand human language.
+SpaCy is a Python library used for natural language processing and named entity recognition.
+TF-IDF represents text using word importance scores.
+Question answering systems retrieve or generate answers to user questions.
+Latent Dirichlet Allocation is a topic modelling algorithm.
+WordNet is a lexical database containing words, synonyms, and definitions.

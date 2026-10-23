@@ -1,0 +1,4 @@
+flask
+spacy
+jupyter
+ipykernel

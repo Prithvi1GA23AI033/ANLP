@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AAT3 · Movie RAG · AML23702</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<aside class="side">
+  <div class="brand"><span class="mark">NL</span><div><b>ANLP Workbench</b><small>AML23702 · AAT 3</small></div></div>
+  <nav id="nav">
+    <button class="active"><i>03</i> Movie RAG <em>Neo4j + LLM · port 5003</em></button>
+  </nav>
+  <div class="who">P Prithvi Raj Kandan<br><span>1GA23AI033 · Dept. of AI &amp; ML</span><br><span>Global Academy of Technology</span></div>
+</aside>
+
+<main>
+<section id="q3">
+  <header><h1>Movie RAG · Neo4j Movies Graph</h1><p>Retrieve facts (movies, people, roles, years) from the Neo4j Movies dataset, then generate an answer with an LLM, or with a labelled template if <code>LLM_API_KEY</code> is not set. This page calls <code>http://localhost:5003/api/rag</code>.</p></header>
+  <div class="card">
+    <label>Ask about a movie, actor, director or year</label>
+    <input id="q3-q" value="">
+    <div class="chips" id="q3-chips" data-target="q3-q"></div>
+    <button class="go" onclick="runQ3()">Retrieve &amp; answer</button>
+    <div id="q3-status" class="status"></div>
+  </div>
+  <div id="q3-out" class="out"></div>
+</section>
+</main>
+<script src="app.js"></script>
+</body>
+</html>

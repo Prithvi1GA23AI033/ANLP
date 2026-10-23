@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AAT1 · POS &amp; NER · AML23702</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<aside class="side">
+  <div class="brand"><span class="mark">NL</span><div><b>ANLP Workbench</b><small>AML23702 · AAT 1</small></div></div>
+  <nav id="nav">
+    <button class="active"><i>01</i> POS &amp; NER <em>spaCy · port 5001</em></button>
+  </nav>
+  <div class="who">P Prithvi Raj Kandan<br><span>1GA23AI033 · Dept. of AI &amp; ML</span><br><span>Global Academy of Technology</span></div>
+</aside>
+
+<main>
+<section id="q1">
+  <header><h1>POS Tagging &amp; Named Entity Recognition</h1><p>Paste a paragraph. spaCy (<code>en_core_web_sm</code>) tags every word and marks named entities. This page calls <code>http://localhost:5001/api/pos-ner</code>.</p></header>
+  <div class="card">
+    <label>Paragraph</label>
+    <textarea id="q1-text" rows="5" placeholder="Loading sample from data/paragraph.txt…"></textarea>
+    <button class="go" id="q1-go" onclick="runQ1()">Analyse paragraph</button>
+  </div>
+  <div id="q1-out" class="out"></div>
+</section>
+</main>
+<script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,6 @@
+flask
+scikit-learn
+neo4j
+requests
+jupyter
+ipykernel

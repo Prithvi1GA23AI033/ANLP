@@ -1,0 +1,6 @@
+The team won the football match after scoring two goals.
+The player trained daily before the tournament and match.
+The doctor treated patients and prescribed medicine in the hospital.
+Nurses and doctors work in hospitals to improve patient health.
+Python is used for machine learning and artificial intelligence.
+Machine learning models learn patterns from data using algorithms.

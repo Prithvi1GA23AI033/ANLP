@@ -1,0 +1,4 @@
+flask
+nltk
+jupyter
+ipykernel
